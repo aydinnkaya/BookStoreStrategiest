@@ -55,7 +55,7 @@ struct Sale : Identifiable ,Equatable{
             let randomDate = Date.random(in: threeMonthsAgo...Date())
             
             let weekday = Calendar.current.component(.weekday, from: randomDate)
-         //   let randomQuantity = Int.random(in: 1...((weekday == 7 || weekday == 1) ? 100 : 50))
+            // let randomQuantity = Int.random(in: 1...((weekday == 7 || weekday == 1) ? 100 : 50))
             // Apply Central Limit Theorem to approximate Gaussian distribution
             var average: Int = 35
             switch weekday {
@@ -88,4 +88,4 @@ extension Date {
         return Date(timeIntervalSinceReferenceDate: randomValue)
     }
 }
-}
+
